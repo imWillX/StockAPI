@@ -20,9 +20,17 @@ public interface QuoteResult {
 
     String getExchangeTimezoneName();
 
+    String getMarketState();
+
     double getRegularMarketPrice();
 
     double getRegularMarketChange();
 
     double getRegularMarketChangePercent();
+
+    long getPostMarketTime();
+
+    double getPostMarketPrice();
+
+    double getPostMarketChange();
 }
