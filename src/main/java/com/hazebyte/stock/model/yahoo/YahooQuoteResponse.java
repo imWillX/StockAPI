@@ -1,4 +1,4 @@
-package com.hazebyte.stonk.model.yahoo;
+package com.hazebyte.stock.model.yahoo;
 
 import java.util.Arrays;
 

@@ -1,15 +1,15 @@
-package com.hazebyte.stonk.api;
+package com.hazebyte.stock.api;
 
 import com.google.gson.Gson;
-import com.hazebyte.stonk.model.yahoo.YahooQuote;
-import com.hazebyte.stonk.net.HttpClient;
+import com.hazebyte.stock.model.yahoo.YahooQuote;
+import com.hazebyte.stock.net.HttpClient;
 
 import java.io.*;
 import java.net.HttpURLConnection;
 import java.net.URL;
 import java.util.stream.Collectors;
 
-public class YahooAPI implements StonkAPI {
+public class YahooAPI implements StockAPI {
     private HttpClient httpClient;
 
     private final String API_LINK = "https://query1.finance.yahoo.com/v7/finance";

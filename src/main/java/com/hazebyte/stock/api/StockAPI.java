@@ -1,10 +1,10 @@
-package com.hazebyte.stonk.api;
+package com.hazebyte.stock.api;
 
-import com.hazebyte.stonk.model.yahoo.YahooQuote;
+import com.hazebyte.stock.model.yahoo.YahooQuote;
 
 import java.io.IOException;
 
-public interface StonkAPI {
+public interface StockAPI {
 
     /**
      * Returns a quote from a symbol.

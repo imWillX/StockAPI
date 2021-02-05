@@ -1,6 +1,6 @@
-package com.hazebyte.stonk.model.yahoo;
+package com.hazebyte.stock.model.yahoo;
 
-import com.hazebyte.stonk.model.QuoteResult;
+import com.hazebyte.stock.model.QuoteResult;
 
 public class YahooQuoteResult implements QuoteResult {
     public String language;
