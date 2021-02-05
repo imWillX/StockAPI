@@ -10,6 +10,7 @@ Install this API to use in your personal projects.
 
 ```
 git@github.com:imWillX/StonkAPI.git
+cd StonkAPI
 mvn install
 ```
 
