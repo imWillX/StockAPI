@@ -1,6 +1,6 @@
-# StonkAPI
+# StockAPI
 
-StonkAPI is a java API that tracks stock positions.
+StockAPI is a java API that tracks stock positions.
 
 ## Install
 
@@ -9,8 +9,8 @@ Install this API to use in your personal projects.
 ### Build
 
 ```
-git@github.com:imWillX/StonkAPI.git
-cd StonkAPI
+git@github.com:imWillX/StockAPI.git
+cd StockAPI
 mvn install
 ```
 
@@ -28,8 +28,8 @@ To use in your local project, add this to your `pom.xml`.
 
 ```
         <dependency>
-            <groupId>com.hazebyte.stonk</groupId>
-            <artifactId>stonkapi</artifactId>
+            <groupId>com.hazebyte.stock</groupId>
+            <artifactId>stockapi</artifactId>
             <version>1.0.0</version>
         </dependency>
 ```
@@ -37,10 +37,10 @@ To use in your local project, add this to your `pom.xml`.
 ## Usage
 
 ```
-StonkAPI api = new YahooAPI();
+StockAPI api = new YahooAPI();
 Quote quote = api.getQuoteFromSymbol("GME");
 QuoteResult result = quote.getQuotes()[0];
 
 result.getSymbol(); // GME
-result.getRegularMarketPrice(); // $ $
+result.getRegularMarketPrice(); // $$
 ```

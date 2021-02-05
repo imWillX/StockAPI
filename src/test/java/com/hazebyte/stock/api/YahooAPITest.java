@@ -1,7 +1,7 @@
-package com.hazebyte.stonk.api;
+package com.hazebyte.stock.api;
 
-import com.hazebyte.stonk.model.Quote;
-import com.hazebyte.stonk.model.QuoteResult;
+import com.hazebyte.stock.model.Quote;
+import com.hazebyte.stock.model.QuoteResult;
 import org.junit.Test;
 import static org.junit.Assert.*;
 
@@ -13,7 +13,7 @@ public class YahooAPITest {
     public void getQuoteFromSymbol() throws IOException {
         String symbol = "GME";
 
-        StonkAPI api = new YahooAPI();
+        StockAPI api = new YahooAPI();
         Quote quote = api.getQuoteFromSymbol(symbol);
 
         QuoteResult result = quote.getQuotes()[0];
@@ -26,7 +26,7 @@ public class YahooAPITest {
     public void getQuoteFromSymbols() throws IOException {
         String[] symbols = {"GME", "GM"};
 
-        StonkAPI api = new YahooAPI();
+        StockAPI api = new YahooAPI();
         Quote quote = api.getQuoteFromSymbols(symbols);
 
         QuoteResult gmeResult = quote.getQuotes()[0];

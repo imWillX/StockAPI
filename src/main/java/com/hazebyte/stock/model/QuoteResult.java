@@ -1,4 +1,4 @@
-package com.hazebyte.stonk.model;
+package com.hazebyte.stock.model;
 
 public interface QuoteResult {
 

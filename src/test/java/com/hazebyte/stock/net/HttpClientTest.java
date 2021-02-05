@@ -1,4 +1,4 @@
-package com.hazebyte.stonk.net;
+package com.hazebyte.stock.net;
 
 import org.junit.Test;
 
