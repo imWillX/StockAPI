@@ -1,6 +1,11 @@
 # StockAPI
 
-StockAPI is a java API that tracks stock positions.
+StockAPI is a java API that tracks stock positions. This returns live data from online finance REST APIs (Yahoo).
+
+## API Feature
+
+- Easy to use API
+- Extendable to other finance API sources
 
 ## Install
 
