@@ -5,7 +5,7 @@
     <modelVersion>4.0.0</modelVersion>
 
     <groupId>com.hazebyte.stonk</groupId>
-    <artifactId>StonkAPI</artifactId>
+    <artifactId>stonkapi</artifactId>
     <version>1.0.0</version>
 
     <properties>

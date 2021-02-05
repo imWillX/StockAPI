@@ -105,6 +105,11 @@ public class YahooQuoteResult implements QuoteResult {
     }
 
     @Override
+    public String getMarketState() {
+        return marketState;
+    }
+
+    @Override
     public double getRegularMarketPrice() {
         return regularMarketPrice;
     }
@@ -117,6 +122,21 @@ public class YahooQuoteResult implements QuoteResult {
     @Override
     public double getRegularMarketChangePercent() {
         return regularMarketChangePercent;
+    }
+
+    @Override
+    public long getPostMarketTime() {
+        return postMarketTime;
+    }
+
+    @Override
+    public double getPostMarketPrice() {
+        return postMarketPrice;
+    }
+
+    @Override
+    public double getPostMarketChange() {
+        return postMarketChange;
     }
 
     @Override
