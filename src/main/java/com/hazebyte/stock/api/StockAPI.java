@@ -1,5 +1,6 @@
 package com.hazebyte.stock.api;
 
+import com.hazebyte.stock.model.Quote;
 import com.hazebyte.stock.model.yahoo.YahooQuote;
 
 import java.io.IOException;
@@ -11,7 +12,7 @@ public interface StockAPI {
      * @param symbol the symbol of the stock e.g. GME.
      * @return {@link YahooQuote}.
      */
-    YahooQuote getQuoteFromSymbol(String symbol) throws IOException;
+    Quote getQuoteFromSymbol(String symbol) throws IOException;
 
     /**
      * Returns a quote for the specified symbols.
@@ -19,5 +20,5 @@ public interface StockAPI {
      * @return the quotes for the following symbols.
      * @throws IOException
      */
-    YahooQuote getQuoteFromSymbols(String[] symbols) throws IOException;
+    Quote getQuoteFromSymbols(String[] symbols) throws IOException;
 }

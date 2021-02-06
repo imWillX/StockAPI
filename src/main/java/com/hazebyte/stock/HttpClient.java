@@ -1,4 +1,4 @@
-package com.hazebyte.stock.net;
+package com.hazebyte.stock;
 
 import java.io.IOException;
 import java.net.HttpURLConnection;

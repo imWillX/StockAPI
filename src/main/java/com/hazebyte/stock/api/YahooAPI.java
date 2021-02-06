@@ -2,7 +2,7 @@ package com.hazebyte.stock.api;
 
 import com.google.gson.Gson;
 import com.hazebyte.stock.model.yahoo.YahooQuote;
-import com.hazebyte.stock.net.HttpClient;
+import com.hazebyte.stock.HttpClient;
 
 import java.io.*;
 import java.net.HttpURLConnection;
