@@ -48,4 +48,15 @@ QuoteResult result = quote.getQuotes()[0];
 
 result.getSymbol(); // GME
 result.getRegularMarketPrice(); // $$
+result.getRegularMarketChange(); // +-$
+result.getRegularMarketChangePercent(); // x%
+result.getPostMarketPrice(); // $$
+result.getPostMarketChange(); // x%
+result.getCurrency(); // USD
+result.getDisplayName(); // GameStop
+result.getExchange(); // NYQ
+result.getStockName(); // GameStop Corporation
+result.getStockAltName(); // GameStop Corp.
+result.getExchangeTimezone(); // EST
+result.getExchangeTimezoneName(); // America/New_York
 ```
