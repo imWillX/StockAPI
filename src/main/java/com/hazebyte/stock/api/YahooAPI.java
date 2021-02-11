@@ -1,8 +1,10 @@
 package com.hazebyte.stock.api;
 
 import com.google.gson.Gson;
+import com.hazebyte.stock.http.Request;
+import com.hazebyte.stock.http.Response;
 import com.hazebyte.stock.model.yahoo.YahooQuote;
-import com.hazebyte.stock.HttpClient;
+import com.hazebyte.stock.http.HttpClient;
 
 import java.io.*;
 import java.net.HttpURLConnection;
@@ -28,15 +30,14 @@ public class YahooAPI implements StockAPI {
     public YahooQuote getQuoteFromSymbol(String symbol) throws IOException {
         String link = String.format("%s/quote?lang=%s&region=%s&corsDomain=%s&symbols=%s", API_LINK, lang, region, corsDomain, symbol);
         URL url = new URL(link);
-        HttpURLConnection connection = httpClient.get(url);
-        InputStream stream = connection.getInputStream();
-        BufferedReader reader = new BufferedReader(new InputStreamReader(stream));
+        Request request = Request.builder()
+                .url(url)
+                .get();
 
-        String jsonString = reader.lines()
-                .collect(Collectors.joining());
+        Response response = httpClient.call(request);
 
         Gson gson = new Gson();
-        Object obj = gson.fromJson(jsonString, YahooQuote.class);
+        Object obj = gson.fromJson(response.getBody(), YahooQuote.class);
 
         YahooQuote quote = (YahooQuote) obj;
         return quote;
