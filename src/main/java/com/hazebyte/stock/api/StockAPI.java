@@ -10,7 +10,7 @@ public interface StockAPI {
     /**
      * Returns a quote from a symbol.
      * @param symbol the symbol of the stock e.g. GME.
-     * @return {@link YahooQuote}.
+     * @return {@link Quote}.
      */
     Quote getQuoteFromSymbol(String symbol) throws IOException;
 
